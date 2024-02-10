@@ -1,7 +1,6 @@
 ## MakeMyForm
 ![MIT license](https://img.shields.io/badge/License-MIT-blue.svg?longCache=true)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?longCache=true)
-
 ![NPM: released](https://img.shields.io/npm/v/makemyform.svg)
 
 
