@@ -1,0 +1,122 @@
+{
+    "type": "object",
+    "properties": {
+        "form": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "fields": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "label": {
+                                "type": "string"
+                            },
+                            "element": {
+                                "type": "string"
+                            },
+                            "options": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "label": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "label",
+                                        "value"
+                                    ]
+                                }
+                            },
+                            "validation": {
+                                "type": "object",
+                                "properties": {
+                                    "required": {
+                                        "type": "boolean",
+                                        "default": false
+                                    },
+                                    "regex": {
+                                        "type": "string"
+                                    },
+                                    "minLength": {
+                                        "type": "number"
+                                    },
+                                    "maxLength": {
+                                        "type": "number"
+                                    },
+                                    "minValue": {
+                                        "type": "number"
+                                    },
+                                    "maxValue": {
+                                        "type": "number"
+                                    }
+                                }
+                            },
+                            "attributes": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": [
+                                        "string",
+                                        "number"
+                                    ]
+                                }
+                            }
+                        },
+                        "required": [
+                            "element"
+                        ],
+                        "if": {
+                            "properties": {
+                                "element": {
+                                    "enum": [
+                                        "radio",
+                                        "checkbox"
+                                    ]
+                                }
+                            }
+                        },
+                        "then": {
+                            "required": [
+                                "options"
+                            ]
+                        },
+                        "else": {
+                            "not": {
+                                "properties": {
+                                    "element": {
+                                        "enum": [
+                                            "radio",
+                                            "checkbox"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "title",
+                "description",
+                "fields"
+            ]
+        }
+    },
+    "required": [
+        "form"
+    ]
+}

@@ -1,0 +1,31 @@
+const schema = {
+    "form": {
+        "title": "string",
+        "description": "string",
+        "fields": [
+            {
+                "label": "string",
+                "element": "string", // HTML form element: text, textarea, select, button, password, email etc.                         
+                "options": [
+                        {
+                            "name": "string", // it make be give or not be then use generateRandomName function
+                            "label": "string", 
+                            "value": "string" 
+                        }
+                    ],
+               
+                "validation": {
+                    "required": "boolean",
+                    "regex": "string", // Regular expression for custom validation
+                    "minLength": "number",
+                    "maxLength": "number",
+                    "minValue": "number",
+                    "maxValue": "number"
+                },
+                "attributes": {
+                    "attributeName": "value" // Additional attributes like class, id, name or any other attrinute
+                }
+            }
+        ]
+    }
+}
