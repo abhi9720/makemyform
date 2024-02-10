@@ -1,18 +1,26 @@
 {
   "name": "makemyform",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple JS Lib to Create HTML Form",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhi9720/makemyform"
+  },
   "keywords": [
     "JSON",
     "schema",
     "HTML5",
-    "form"
+    "form",
+    "JavaScript",
+    "form-generator",
+    "makemyform"
   ],
   "author": "Abhishek Tiwari",
   "license": "MIT",
   "dependencies": {
     "ajv": "^8.12.0",
     "jsdom": "^24.0.0"
-  }
+  },
+  "homepage": "https://github.com/abhi9720/makemyform"
 }

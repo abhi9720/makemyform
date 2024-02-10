@@ -5,10 +5,10 @@ const schema = {
         "fields": [
             {
                 "label": "string",
-                "element": "string", // HTML form element: text, textarea, select, button, password, email etc.                         
-                "options": [
+                "element": "string", // HTML form element: text, textarea, checkbox, date, img, select, button, password, email etc.                         
+                "options": [ // only used in case checkbox, select, radio 
                         {
-                            "name": "string", // it make be give or not be then use generateRandomName function
+                            "name": "string", 
                             "label": "string", 
                             "value": "string" 
                         }
