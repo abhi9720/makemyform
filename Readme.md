@@ -1,14 +1,28 @@
 ## MakeMyForm
 
-**Version:** 1.0.2  
-**Author:** Abhishek Tiwari  
-**License:** MIT
+![MIT license](https://img.shields.io/badge/License-MIT-blue.svg?longCache=true)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?longCache=true)
+![NPM: released](https://img.shields.io/npm/v/makemyform.svg)
 
 ---
 
 ### Description
 
-MakeMyForm is a simple JavaScript library designed to generate HTML forms dynamically based on JSON input. It provides an easy way to create custom HTML forms using a JSON schema.
+MakeMyForm is a simple and lightweight JavaScript library designed to generate HTML forms dynamically based on JSON input. It provides an easy way to create custom HTML forms using a JSON schema.
+
+---
+
+### Dependencies
+
+MakeMyForm relies on the following npm packages:
+
+- **Ajv**: A JSON Schema validator for Node.js and browser. It is used for validating the JSON schema input provided by the user.
+
+  ![Ajv](https://img.shields.io/npm/v/ajv.svg)
+
+- **Jsdom**: A pure-JavaScript implementation of many web standards, notably the WHATWG DOM and HTML Standards. It is used for parsing and manipulating HTML documents in Node.js.
+
+  ![Jsdom](https://img.shields.io/npm/v/jsdom.svg)
 
 ---
 
@@ -117,6 +131,9 @@ console.log(htmlOutput);
 ---
 
 ### Repository
+
+[![GitHub issues](https://img.shields.io/github/issues/abhi9720/makemyform)](https://github.com/abhi9720/makemyform/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/abhi9720/makemyform)](https://github.com/abhi9720/makemyform/pulls)
 
 [GitHub Repository](https://github.com/abhi9720/makemyform)
 
