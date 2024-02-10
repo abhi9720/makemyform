@@ -1,29 +1,30 @@
-Sure, here's an updated README file with all the useful badges and the current npm version:
+## MakeMyForm
 
-````markdown
-# MakeMyForm
+**Version:** 1.0.2  
+**Author:** Abhishek Tiwari  
+**License:** MIT
 
-[![npm version](https://img.shields.io/npm/v/makemyform.svg)](https://www.npmjs.com/package/makemyform)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+---
+
+### Description
 
 MakeMyForm is a simple JavaScript library designed to generate HTML forms dynamically based on JSON input. It provides an easy way to create custom HTML forms using a JSON schema.
 
 ---
 
-## Installation
+### Installation
 
 You can install MakeMyForm via npm:
 
 ```bash
 npm install makemyform
 ```
-````
 
 ---
 
-## Usage
+### Usage
 
-### Schema Format
+#### Schema Format
 
 The library expects a JSON schema following a specific format:
 
@@ -60,7 +61,7 @@ The library expects a JSON schema following a specific format:
 }
 ```
 
-### Example Usage
+#### Example Usage
 
 ```javascript
 const MakeMyForm = require("makemyform");
@@ -95,7 +96,7 @@ const htmlOutput = MakeMyForm.createForm(jsonFormData);
 console.log(htmlOutput);
 ```
 
-### Output
+#### Output
 
 ```html
 <form>
@@ -115,17 +116,12 @@ console.log(htmlOutput);
 
 ---
 
-## Repository
+### Repository
 
 [GitHub Repository](https://github.com/abhi9720/makemyform)
 
 ---
 
-## License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/abhi9720/makemyform/blob/main/LICENSE) file for details.
-
-```
-
-In this updated README, I've added two badges: one for the npm version and one for the license. I've also updated the npm version to 1.0.2. You can replace `abhi9720/makemyform` with your actual GitHub repository link.
-```
