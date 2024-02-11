@@ -1,11 +1,11 @@
 {
   "name": "makemyform",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Simple JS Lib to Create HTML Form",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/abhi9720/makemyform"
+    "url": "git+https://github.com/abhi9720/makemyform.git"
   },
   "keywords": [
     "JSON",
