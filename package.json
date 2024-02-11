@@ -1,6 +1,6 @@
 {
   "name": "makemyform",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Simple JS Lib to Create HTML Form",
   "main": "index.js",
   "repository": {
